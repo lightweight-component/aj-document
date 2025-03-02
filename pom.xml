@@ -2,29 +2,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>aj-fast-doc</artifactId>
-    <version>1.0.0</version>
-    <description>FastDoc 文档提取工具</description>
-    <packaging>jar</packaging>
+    <groupId>com.ajaxjs</groupId>
+    <artifactId>aj-documnet</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
 
-    <parent>
-        <groupId>com.ajaxjs</groupId>
-        <artifactId>ajaxjs-parent</artifactId>
-        <version>1.17</version>
-        <relativePath/>
-    </parent>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.ajaxjs</groupId>
-            <artifactId>ajaxjs-framework</artifactId>
-            <version>1.1.8</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.ajaxjs</groupId>
-            <artifactId>ajaxjs-javadoc</artifactId>
-            <version>1.0.3</version>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>common</module>
+        <module>core</module>
+        <module>components</module>
+        <module>playground</module>
+        <module>aj-base</module>
+        <module>aj-sample-app</module>
+    </modules>
 </project>
